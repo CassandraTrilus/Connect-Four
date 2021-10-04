@@ -1,118 +1,127 @@
 * {
   box-sizing: border-box;
-}    
+}
 
 body {
-  margin: auto;
+  margin: 2rem;
   display: flex;
-  flex-flow: column wrap;
-  justify-content: space-around;
+  flex-flow: row wrap;
+  background: rgb(240, 206, 13);
+  justify-content: center;
   align-content: center;
+  font-family: sans-serif;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player_container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 #title {
   display: flex;
   justify-content: center;
+  width: 28rem;
 }
-  
+
 #message {
   display: flex;
   justify-content: center;
 }
 
-.container{
-  border: 3px solid gray;
-  border-radius: 20px;
+.container {
+  border: 3px solid black;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 525px;
-  margin: 50px;
+  height: 605px;
+  width: 520px;
+  margin: 400px 50px 50px 50px;
   transform: rotate(-90deg);
-  
+  align-items: center;
+  position: fixed;
 }
 
 .board {
-  background-color: cornflowerblue;
-  background: linear-gradient(cornflowerblue,rgb(184, 209, 255));
-  height: 512px;
+  background: linear-gradient(rgb(28, 105, 247), rgb(39, 109, 238));
+  height: 700px;
+  width: 508px;
   padding: 10px;
   margin: 3px;
-  border-radius: 20px;
-  display: flex;
-} 
-
-tr {
-  white-space: nowrap;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: auto;
 }
 
-td{
+td {
   display: inline-block;
   background-color: white;
   border-radius: 50%;
-  flex-wrap: column-wrap;
+  flex-wrap: column wrap;
   position: relative;
   height: 80px;
   width: 80px;
   padding-left: 35px;
 }
-  
+
 #displayP1 {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   background: linear-gradient(to top right, red, rgb(255, 107, 107));
   color: white;
-  border: 3px, solid, gray;
+  margin: 1rem;
+  border: 5px solid white;
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  font-size: large;
-  font-weight: 900;
-  position: relative;
-  left: 200px;
-  top: 38px;
-  
+  font-size: larger;
+  font-weight: 500;
 }
 
 #displayP2 {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   background: linear-gradient(to top right, black, rgb(92, 92, 92));
   color: white;
-  border: 1px, solid, gray;
+  margin: 1rem;
+  border: 5px solid white;
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  font-size: large;
-  font-weight: 900;
-  position: relative;
-  left: 375px;
-  bottom: 60px;
+  font-size: larger;
+  font-weight: 500;
 }
 
-#reset-game{
-  background: linear-gradient(cornflowerblue,rgb(202, 221, 255));
-  color:white;
-  border: 1px, solid, gray;
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
+button {
+  background: linear-gradient(rgb(106, 215, 106), rgb(98, 182, 98));
+  color: black;
+  border: 0px solid transparent;
+  padding: 1em;
+  border-radius: .3rem;
   font-size: large;
   font-weight: 500;
-  position: relative;
-  left: 285px;
-  bottom: 48px;
 }
 
-.red-chip{
+button:hover {
+  background: rgb(28, 224, 28);
+}
+
+.red-chip {
   background: linear-gradient(to top right, red, rgb(255, 107, 107));
   border: 5px solid white;
   transition: 0.1s;
 }
 
-.black-chip{
+.black-chip {
   background: linear-gradient(to top right, black, rgb(92, 92, 92));
   border: 5px solid white;
   transition: 0.1s;
