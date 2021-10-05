@@ -41,9 +41,9 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 605px;
+  height: 610px;
   width: 520px;
-  margin: 400px 50px 50px 50px;
+  margin: 300px 50px 50px 50px;
   transform: rotate(-90deg);
   align-items: center;
   position: fixed;
@@ -51,7 +51,7 @@ body {
 
 .board {
   background: linear-gradient(rgb(28, 105, 247), rgb(39, 109, 238));
-  height: 700px;
+  height: 690px;
   width: 508px;
   padding: 10px;
   margin: 3px;
@@ -111,9 +111,11 @@ button {
   font-weight: 500;
 }
 
+
 button:hover {
   background: rgb(28, 224, 28);
 }
+
 
 .red-chip {
   background: linear-gradient(to top right, red, rgb(255, 107, 107));
